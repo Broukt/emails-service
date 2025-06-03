@@ -1,0 +1,15 @@
+{
+  "name": "emails-service",
+  "version": "1.0.0",
+  "description": "Emails microservice of the Streamflow system that manages the email sending operations.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Broukt/emails-service"
+  },
+  "author": "Jairo Calcina",
+  "license": "ISC"
+}
