@@ -11,5 +11,12 @@
     "url": "github.com/Broukt/emails-service"
   },
   "author": "Jairo Calcina",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "dotenv": "^16.5.0",
+    "html-to-text": "^9.0.5",
+    "nodemailer": "^7.0.3",
+    "pug": "^3.0.3"
+  }
 }
