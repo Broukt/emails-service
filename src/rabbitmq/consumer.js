@@ -8,7 +8,7 @@ async function consumeBillEvents() {
   const ch = await connectRabbit();
   await ch.assertQueue(billUpdatedQueue, { durable: true });
 
-  ch.consume(videoUpdatedQueue, async (msg) => {
+  ch.consume(billUpdatedQueue, async (msg) => {
     const data = JSON.parse(msg.content.toString());
     await Email(data.userEmail).sendUpdateBillEmail(data.bill);
     console.log(`Email sent to ${data.userEmail} for bill update: ${data.bill.id}`);
@@ -16,4 +16,4 @@ async function consumeBillEvents() {
   });
 }
 
-module.exports = { consumeVideoEvents };
+module.exports = { consumeBillEvents };
